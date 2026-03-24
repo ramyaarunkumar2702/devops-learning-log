@@ -1,0 +1,33 @@
+Basics of Kubernetes:
+-  It's an orchestration tool (Orchestrator of containers)
+- Docker (creates container), Kubernetes (manage container)
+-  It has pods (which has containers inside - similar to Docker) & Kubernetes runs these pods
+-  Pod (smallest unit in Kubernetes)
+- kubectl (command line tool for running kubernetes)
+
+Using: KodeKloud : https://kodekloud.com/studio/labs/kubernetes
+
+HANDS-ON:
+1. Check cluster connection
+   - kubectl get nodes
+
+2. Create a pod (Ex: nginx)
+  - kubectl run nginx --image=nginx
+
+3. Verify if pod is running
+   - kubectl get pods
+
+4. Describe pods/ Get detailed info
+   - kubectl describe pod nginx
+
+5. Check logs
+  - kubectl logs nginx
+
+6. Delete pod
+  - kubectl delete pod nginx
+
+7. To run commands inside pods
+  - kubectl exec -it nginx -- /bin/bash
+
+
+
